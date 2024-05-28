@@ -1,0 +1,32 @@
+p {
+    font-family: monospace;
+    font-size: 135%;
+    z-index: 100;
+    position: fixed;
+    width: 150%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    color: #5de0e7; /* Set text color to white */
+    background-color: transparent; /* Set background to transparent */
+    /* Starting position */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: scroll-left 20s linear infinite;
+    -webkit-animation: scroll-left 1s linear infinite;
+    animation: scroll-left 30s linear infinite;
+    pointer-events: none;
+}
+
+/* Move it (define the animation) */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

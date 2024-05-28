@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#overlayImage {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    top: 11%;
+    left: 29.5%;
+    z-index: 20; /* Above the canvas */
+    pointer-events: none;
+}
+
+#myCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; /* Above the stars and twinkling layers */
+}
+
+header {
+    background-color: #333; /* Choose your desired background color */
+    color: rgb(255, 255, 255); /* Set text color to white */
+    padding:  px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #000000; /* Choose your desired background color */
+    color: #fff; /* Set text color to white */
+    padding: 20px;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px; /* Adjust spacing between links */
+    z-index: 100;
+
+}
+
+nav ul li a {
+    color: #fff; /* Set link color to white */
+    text-decoration: none;
+    z-index: 100;
+
+}
+
+
+h1 {
+    color: #ffffff;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
